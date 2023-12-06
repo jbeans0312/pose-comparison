@@ -27,6 +27,7 @@ def compare_positions(benchmark_video, user_video):
 			cv2.namedWindow(winname)		   # Create a named window
 			cv2.moveWindow(winname, 720,-100)  # Move it to desired location
 			image_1 = cv2.resize(image_1, (720,640))
+			image_1 = cv2.flip(image_1, 1)
 			image_1 = detector_1.findPose(image_1)
 			lmList_user = detector_1.findPosition(image_1, draw=False)
 			# del lmList_user[1:11]
