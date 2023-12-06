@@ -27,10 +27,10 @@ if st.button("Start"):
 
 	countdown()
 
-	benchmark_video = 'dance_videos/benchmark_dance.mp4'
+	benchmark_video = 'exercise_videos/benchmark_dance.mp4'
 	
 	if option == 'Example':
-		user_video = 'dance_videos/right_dance.mp4'
+		user_video = 'exercise_videos/right_dance.mp4'
 	else:
 		user_video = 0
 

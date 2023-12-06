@@ -54,7 +54,7 @@ def compare_positions(benchmark_video, user_video):
 								cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
 
 				# If the similarity is > 90%, take it as correct step. Otherwise incorrect step.
-				if error < 0.3:
+				if error < 0.2:
 					cv2.putText(image_1, "CORRECT STEPS", (40, 600),
 								cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 					correct_frames += 1
@@ -67,7 +67,7 @@ def compare_positions(benchmark_video, user_video):
 				# Display the dynamic accuracy of dance as the percentage of frames that appear as correct
 				if frame_counter==0:
 					frame_counter = user_cam.get(cv2.CAP_PROP_FRAME_COUNT)
-				cv2.putText(image_1, "Dance Steps Accurately Done: {}%".format(str(round(100*correct_frames/frame_counter, 2))), (10, 70), 
+				cv2.putText(image_1, "Exercise Steps Accurately Done: {}%".format(str(round(100*correct_frames/frame_counter, 2))), (10, 70),
 							cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 255), 2)
 				
 				# Display both the benchmark and the user videos
@@ -88,8 +88,8 @@ def compare_positions(benchmark_video, user_video):
 
 
 def main():
-	benchmark_video = 'dance_videos/benchmark_dance.mp4'
-	user_video = 'dance_videos/right_dance.mp4' # replace with 0 for webcam
+	benchmark_video = 'exercise_videos/cornell_lat_stepdown.mp4'
+	user_video = 0 # replace with 0 for webcam
 	compare_positions(benchmark_video, user_video)
 
 if __name__ == "__main__":

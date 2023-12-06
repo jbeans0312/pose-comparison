@@ -9,7 +9,7 @@ def create_move(video_name):
     fps = 24
 
     # Define the codec and filename.
-    out = cv2.VideoWriter('dance_videos/{}.mp4'.format(video_name), cv2.VideoWriter_fourcc('M','J','P','G'), fps, (frame_width,frame_height))
+    out = cv2.VideoWriter('exercise_videos/{}.mp4'.format(video_name), cv2.VideoWriter_fourcc('M','J','P','G'), fps, (frame_width,frame_height))
 
     while(cap.isOpened()):
         ret, frame = cap.read()
