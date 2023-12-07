@@ -1,5 +1,5 @@
 import cv2, time
-import pose_module as pm
+from util import pose_module as pm
 from scipy.spatial.distance import cosine
 from fastdtw import fastdtw
  
