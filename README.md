@@ -1,15 +1,17 @@
-# Body Movement Comparison with Mediapipe
+# Mr. Pose
 
-This is an AI that gives real-time feedback to the user of how they're performing a body movement (like, workout, dance, etc) against a benchmark video. 
+Mr. Pose allows a user to compare their form to a professional's form during physical therapy exercises.
 
-You can give the benchmark video as a pre-saved file, and the user video as either a pre-saved file or with the webcam feed.
+This prototype contains four exercises from Cornell's pysical therapy [database](https://health.cornell.edu/services/physical-therapy-massage/pt-exercise-videos).
 
-Its built using [mediapipe](https://github.com/google/mediapipe) in the backend, so we get a pretty high FPS (around 15 on MacBook Pro 16) when running on CPU only, as opposed to 2-3 FPS when the same application was built with [tf-pose-estimation](https://github.com/ZheC/tf-pose-estimation).
+This code is built off of a fork from [] and has been updated to include the most recent libraries. The model requires a good amount of RAM to run locally, so we recommend running Mr. Pose on a system with at least 8-10 gb.
 
 ## Usage on stand alone app on local machine
-
-```
-- Install PyCharm Community Edition or some other Python installation
-- Once installed, execute the following command from within the pose-comparison directory
-  - python MrPose.py
-```
+1. Install and setup a Python3 environment on your machine, we recommend this [guide](https://realpython.com/installing-python/) from RealPython.
+2. Download a copy of this repository to your machine using the following command, or install the .zip release featured on this page.
+   `git clone https://github.com/jbeans0312/pose-comparison/`
+3. Navigate to the `pose-comparison` folder using the `cd` command. If this is new to you, we recommend this [guide](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/) from DigitalCitizen
+4. Once in the `pose-comparison` folder, execute the following command to launch Mr. Pose
+    `python MrPose.py`
+5. To begin, select an exercise and press the 'Begin Exercise' button. Once you are done, press 'Q' to return to the menu.
+<img width="392" alt="Screenshot 2023-12-14 at 11 11 09 PM" src="https://github.com/jbeans0312/pose-comparison/assets/79337640/09b8e1c2-7e1b-405b-978c-f95052d7696d">
