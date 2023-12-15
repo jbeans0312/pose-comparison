@@ -4,7 +4,7 @@ Mr. Pose allows a user to compare their form to a professional's form during phy
 
 This prototype contains four exercises from Cornell's pysical therapy [database](https://health.cornell.edu/services/physical-therapy-massage/pt-exercise-videos).
 
-This code is built off of a fork from [] and has been updated to include the most recent libraries. The model requires a good amount of RAM to run locally, so we recommend running Mr. Pose on a system with at least 8-10 gb.
+This code is built off of a fork from [PrashantSaikia](https://github.com/PrashantSaikia) and has been updated to include the most recent libraries. The model requires a good amount of RAM to run locally, so we recommend running Mr. Pose on a system with at least 8-10 gb.
 
 ## Usage on local machine
 1. Install and setup a Python3 environment on your machine, we recommend this [guide](https://realpython.com/installing-python/) from RealPython.
