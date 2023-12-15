@@ -6,7 +6,7 @@ This prototype contains four exercises from Cornell's pysical therapy [database]
 
 This code is built off of a fork from [] and has been updated to include the most recent libraries. The model requires a good amount of RAM to run locally, so we recommend running Mr. Pose on a system with at least 8-10 gb.
 
-## Usage on stand alone app on local machine
+## Usage on local machine
 1. Install and setup a Python3 environment on your machine, we recommend this [guide](https://realpython.com/installing-python/) from RealPython.
 2. Download a copy of this repository to your machine using the following command, or install the .zip release featured on this page.
    `git clone https://github.com/jbeans0312/pose-comparison/`
